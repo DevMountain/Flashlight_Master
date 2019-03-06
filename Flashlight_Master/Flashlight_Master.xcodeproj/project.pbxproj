@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FBDC363F22305B7200AE23BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC363E22305B7200AE23BD /* AppDelegate.swift */; };
-		FBDC364122305B7200AE23BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC364022305B7200AE23BD /* ViewController.swift */; };
 		FBDC364422305B7200AE23BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDC364222305B7200AE23BD /* Main.storyboard */; };
 		FBDC364622305B7300AE23BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDC364522305B7300AE23BD /* Assets.xcassets */; };
 		FBDC364922305B7300AE23BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDC364722305B7300AE23BD /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		FBDC363B22305B7200AE23BD /* Flashlight_Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashlight_Master.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDC363E22305B7200AE23BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBDC364022305B7200AE23BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBDC364322305B7200AE23BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBDC364522305B7300AE23BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDC364822305B7300AE23BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,37 @@
 		FBDC363D22305B7200AE23BD /* Flashlight_Master */ = {
 			isa = PBXGroup;
 			children = (
-				FBDC363E22305B7200AE23BD /* AppDelegate.swift */,
-				FBDC364022305B7200AE23BD /* ViewController.swift */,
-				FBDC364222305B7200AE23BD /* Main.storyboard */,
-				FBDC364522305B7300AE23BD /* Assets.xcassets */,
-				FBDC364722305B7300AE23BD /* LaunchScreen.storyboard */,
-				FBDC364A22305B7300AE23BD /* Info.plist */,
+				FBDC365222305F0F00AE23BD /* View Controllers */,
+				FBDC365022305ED800AE23BD /* Storyboards */,
+				FBDC365122305F0300AE23BD /* Source Files */,
 			);
 			path = Flashlight_Master;
+			sourceTree = "<group>";
+		};
+		FBDC365022305ED800AE23BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC364222305B7200AE23BD /* Main.storyboard */,
+				FBDC364722305B7300AE23BD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FBDC365122305F0300AE23BD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC363E22305B7200AE23BD /* AppDelegate.swift */,
+				FBDC364522305B7300AE23BD /* Assets.xcassets */,
+				FBDC364A22305B7300AE23BD /* Info.plist */,
+			);
+			path = "Source Files";
+			sourceTree = "<group>";
+		};
+		FBDC365222305F0F00AE23BD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDC364122305B7200AE23BD /* ViewController.swift in Sources */,
 				FBDC363F22305B7200AE23BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = Flashlight_Master/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Flashlight_Master/Source Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = Flashlight_Master/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Flashlight_Master/Source Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

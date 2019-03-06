@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FbE-Bu-1ao">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Flashlight View Controller-->
+        <scene sceneID="FP9-fz-bjc">
+            <objects>
+                <viewController id="FbE-Bu-1ao" customClass="FlashlightViewController" customModule="Flashlight_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GNb-ju-m2r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41r-Rr-IO7">
+                                <rect key="frame" x="87.5" y="293.5" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Z6J-tn-BT8"/>
+                                    <constraint firstAttribute="width" constant="200" id="kHJ-7B-ZND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Turn On">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="FlashlightToggleButtonTapped:" destination="FbE-Bu-1ao" eventType="touchUpInside" id="n5m-6s-QGb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="41r-Rr-IO7" firstAttribute="centerX" secondItem="vlo-r9-ffX" secondAttribute="centerX" id="lvX-fX-ySk"/>
+                            <constraint firstItem="41r-Rr-IO7" firstAttribute="centerY" secondItem="vlo-r9-ffX" secondAttribute="centerY" id="shI-Fo-EtB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vlo-r9-ffX"/>
+                    </view>
+                    <connections>
+                        <outlet property="FlashlightToggleButton" destination="41r-Rr-IO7" id="LN3-kp-HDI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgL-3B-A9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="-5"/>
+        </scene>
+    </scenes>
 </document>

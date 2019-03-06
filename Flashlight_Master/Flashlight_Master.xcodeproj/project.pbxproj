@@ -11,6 +11,7 @@
 		FBDC364422305B7200AE23BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDC364222305B7200AE23BD /* Main.storyboard */; };
 		FBDC364622305B7300AE23BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDC364522305B7300AE23BD /* Assets.xcassets */; };
 		FBDC364922305B7300AE23BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDC364722305B7300AE23BD /* LaunchScreen.storyboard */; };
+		FBDC365422305FA700AE23BD /* FlashlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC365322305FA700AE23BD /* FlashlightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FBDC364522305B7300AE23BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDC364822305B7300AE23BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBDC364A22305B7300AE23BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDC365322305FA700AE23BD /* FlashlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashlightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		FBDC365222305F0F00AE23BD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FBDC365322305FA700AE23BD /* FlashlightViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDC365422305FA700AE23BD /* FlashlightViewController.swift in Sources */,
 				FBDC363F22305B7200AE23BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,9 @@ Students who complete this project independently are able to:
 
 Build the initial view a user will see. This view will have two states that we will control programmatically. The first state has a black background and an ‘Turn On’ button with white text. When the user taps ‘Turn On’ change the background to white, update the button’s title to ‘Turn Off’, and change the button text color to black. The button should toggle the two states.
 
+### Create Xcode Project
+After selecting single-view application, make sure that the User Interface option is on Storyboard before creating your project, else if you selected SwiftUI you will need to delete your project and create a new one. 
+
 ### FlashlightViewController
 
 1. Delete the initial ViewController.Swift file

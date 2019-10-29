@@ -36,8 +36,7 @@ After selecting single-view application, make sure that the User Interface optio
 ### Outlets / Actions
 
 1. Navigate to your Main.storyboard file and select your Flashlight ViewController 
-2. Click on your assistant editor. It looks like two rings that slightly intersect.
-   Alternatively you could Option + Click on your FlashlightViewController.swift file to open that file in your assistant editor.
+2. With the storyboard open, Option + Click on your FlashlightViewController.swift file to open that file in your assistant editor.
 3. Create an `Outlet` for your button by control-dragging from your `Button` to the `FlashlightViewControler.swift` file that your Assistant editor opened. Name your button `flashlightToggleButton`
 ** Remember: Outlets should be placed above your `ViewDidLoad`
 
